@@ -1,0 +1,21 @@
+{
+  "version": "mtb-public-evidence/1",
+  "resultsCommit": "a290cb191dbed96e356b6bd4a048eedae431a988",
+  "campaign": "4954eb0d27faede3095f57c59c2c0e832c5b9f8124973eb959b741d908238816",
+  "revision": "63a29c35d784d07ae201abe3612a4692703003bf",
+  "gradingIdentity": "0253eb69cf67f38dc866d73adfcc6ac157d85fbc",
+  "model": {
+    "scheme": "models.dev",
+    "provider": "openai",
+    "model": "gpt-6-luna"
+  },
+  "client": "Codex CLI",
+  "clientVersion": "0.159.1",
+  "dataset": "mtb-harbor/2",
+  "protocol": "mtb-full-sample/1",
+  "withdrawnTiers": [
+    "executive",
+    "management"
+  ],
+  "attempts": []
+}

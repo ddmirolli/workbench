@@ -1,0 +1,20 @@
+{
+  "version": "mtb-public-evidence/1",
+  "resultsCommit": "a290cb191dbed96e356b6bd4a048eedae431a988",
+  "campaign": "e3b38c0d55aa2fa0f36fbecec69678c318e459ba0a3de0408d3423b3fab558d8",
+  "revision": "63a29c35d784d07ae201abe3612a4692703003bf",
+  "gradingIdentity": "0253eb69cf67f38dc866d73adfcc6ac157d85fbc",
+  "model": {
+    "scheme": "models.dev",
+    "provider": "openai",
+    "model": "gpt-6.1-sol"
+  },
+  "client": "Codex CLI",
+  "clientVersion": "0.159.1",
+  "dataset": "mtb-harbor/2",
+  "protocol": "mtb-full-sample/1",
+  "withdrawnTiers": [
+    "executive"
+  ],
+  "attempts": []
+}
