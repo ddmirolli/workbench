@@ -1,0 +1,16 @@
+name: Submission
+description: Submit a Workbench run for grading (topo-workbench submit opens this for you)
+labels: [submission]
+body:
+  - type: textarea
+    id: run
+    attributes:
+      label: Run
+      description: The Harbor job link, agent, model and options. `topo-workbench submit` fills this in.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact
+      description: Optional. How to reach you about this run.
