@@ -1,0 +1,13 @@
+{
+  "name": "topo-workbench",
+  "version": "1.0.0-rc.1",
+  "description": "Workbench: run the Model Topography benchmark on any model with Harbor, then submit the run for grading.",
+  "homepage": "https://modeltopography.com",
+  "license": "MIT",
+  "author": "Dan Mirolli",
+  "type": "module",
+  "bin": { "topo-workbench": "bin/topo-workbench.js" },
+  "files": ["bin", "lib"],
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test test/*.test.js" }
+}
