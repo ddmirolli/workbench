@@ -1,7 +1,7 @@
 # Workbench
 
-Workbench is the benchmark behind [Model Topography](https://modeltopography.com). It measures how AI models do work at
-three levels of an organization, and maps every model on three axes: intelligence, efficiency and agency.
+Workbench is the benchmark behind [Model Topography](https://modeltopography.com). It scores AI models on three axes,
+intelligence, efficiency and agency, across three levels of work.
 
 Most benchmarks score a model on one or two dimensions. Workbench asks the question a builder actually has: which model
 should I use for this job, at which reasoning setting?
