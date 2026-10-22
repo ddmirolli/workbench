@@ -1,0 +1,92 @@
+{
+  "synthetic": true,
+  "version": "mtb-publication/2",
+  "status": "publication-candidate",
+  "date": "2026-10-15",
+  "resultsCommit": "dddddddddddddddddddddddddddddddddddddddd",
+  "sourceHash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "auditHash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "pricing": {
+    "basis": "mtb-token-cost/1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "prices": [
+      {
+        "model": "synthetic-fast-model",
+        "date": "2026-10-15",
+        "source": "https://example.com/synthetic-prices",
+        "serviceTier": "default",
+        "rates": { "input": 1, "output": 1, "cached": 0, "cacheWrite": 0 }
+      }
+    ]
+  },
+  "points": [],
+  "records": [
+    {
+      "campaign": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "declaration": {
+        "model": "synthetic-fast-model",
+        "identity": { "scheme": "models.dev", "provider": "example", "model": "synthetic-fast-model" },
+        "client": "Synthetic client",
+        "clientVersion": "0.0.0",
+        "settings": { "reasoningEffort": "medium" }
+      },
+      "point": {
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:1:synthetic",
+        "configuration": {
+          "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "modelId": "synthetic-fast-model",
+          "displayName": "synthetic-fast-model",
+          "identity": { "scheme": "models.dev", "provider": "example", "model": "synthetic-fast-model" },
+          "client": "Synthetic client",
+          "clientVersion": "0.0.0",
+          "profileHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "reasoning": { "label": "medium", "providerValue": "medium", "order": 1 }
+        },
+        "tier": 1,
+        "comparisonKey": "mtb-comparison/3:synthetic",
+        "taskSetVersion": "mtb-task-set/synthetic",
+        "axes": {
+          "workload": { "status": "validated", "value": 90, "unit": "share of tier work", "methodVersion": "synthetic/1", "evidenceUrl": "https://example.com/synthetic-evidence" },
+          "efficiency": { "status": "unavailable", "reason": "Synthetic example" },
+          "intelligence": { "status": "unavailable", "reason": "Synthetic example" }
+        },
+        "elapsedSeconds": 100,
+        "costUsd": 10,
+        "costBasis": "mtb-token-cost/1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "costDetails": {
+          "basis": "mtb-token-cost/1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "provenance": "api-equivalent-token-estimate",
+          "totalUsd": 10,
+          "inputUsd": 10,
+          "outputUsd": 0,
+          "prices": { "model": "synthetic-fast-model", "date": "2026-10-15", "source": "https://example.com/synthetic-prices", "serviceTier": "default", "rates": { "input": 1, "output": 1, "cached": 0, "cacheWrite": 0 } },
+          "tokens": { "input_tokens": 1, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0 },
+          "cachedShare": 0
+        },
+        "attemptCount": 10,
+        "successCount": 10,
+        "evidenceUrl": "https://example.com/synthetic-evidence"
+      },
+      "executionVerification": { "status": "validated" },
+      "rawEfficiency": null,
+      "rawEfficiencyAxis": { "status": "unavailable", "reason": "Synthetic example" },
+      "efficiencyReference": null,
+      "costBreakdown": {
+        "basis": "mtb-token-cost/1:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "provenance": "api-equivalent-token-estimate",
+        "totalUsd": 10,
+        "inputUsd": 10,
+        "outputUsd": 0,
+        "prices": { "model": "synthetic-fast-model", "date": "2026-10-15", "source": "https://example.com/synthetic-prices", "serviceTier": "default", "rates": { "input": 1, "output": 1, "cached": 0, "cacheWrite": 0 } },
+        "tokens": { "input_tokens": 1, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0 },
+        "cachedShare": 0
+      },
+      "workload": {
+        "workShare": 90,
+        "rungs": [
+          { "rung": 1, "unit": "tickets", "attempts": 10, "passes": 10, "failures": 0, "unresolved": 0, "rate": 1, "lower95": 0.8, "interval95": { "low": 0.8, "high": 1 }, "stoppingAdjustedLower95": 0.8 }
+        ]
+      },
+      "rungMeasures": [ { "rung": 1, "attempts": 10, "elapsedSeconds": 100, "costUsd": 10 } ]
+    }
+  ]
+}

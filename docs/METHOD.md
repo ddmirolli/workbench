@@ -4,9 +4,10 @@ Workbench measures how models perform work at three organizational levels. Model
 three axes. There is no combined score: which model suits a job depends on the work, the evidence and the conditions
 it was tested under.
 
-A **configuration** is a model with its agent, reasoning setting, tools and limits. Each configuration runs the full
-sample: 10 attempts at every task size of a tier, unattended, in an isolated container that can reach its own model
-provider and nothing else.
+A **configuration** is a model with its agent, reasoning setting, tools and limits. The recommended community full
+sample runs 10 attempts at each task, unattended, in an isolated container that can reach its own model provider and
+nothing else. A published point reports its actual attempt counts. It needs at least five scored attempts at every size.
+Partial and top-up campaigns can pool only when they use the same task conditions.
 
 ## The three tiers
 

@@ -7,13 +7,13 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { parseArgs } from 'node:util';
 import { hostsFor, providerOf, PROVIDERS } from './providers.js';
-import { findSecrets } from './scrub.js';
+import { findPersonalData, findSecrets, readIdentifiers, scrubPersonalData } from './scrub.js';
 
 export const HARBOR_VERSION = '0.23.0';
 export const DATASET = 'model-topography/workbench@1.0';
 export const ORG = 'model-topography';
 export const REPOSITORY = 'ddmirolli/workbench';
-// A point on the map needs 10 attempts at every rung (the full sample, Dan 2026-10-06).
+// Community runs default to the 10-attempt full sample. A published point needs five scored attempts at every size.
 export const FULL_SAMPLE = 10;
 
 const USAGE = `topo-workbench: run Workbench on any model, then submit the run for grading.
@@ -21,7 +21,7 @@ const USAGE = `topo-workbench: run Workbench on any model, then submit the run f
   topo-workbench doctor
   topo-workbench run --agent AGENT --model PROVIDER/MODEL [--reasoning LEVEL] [--attempts 10] [--concurrent 4]
                      [--tier entry|management|executive ...] [--task workbench-management-4 ...] [--allow-host HOST ...] [--out DIR] [-- HARBOR_ARGS]
-  topo-workbench submit JOB_DIRECTORY [--dry-run]
+  topo-workbench submit JOB_DIRECTORY [--dry-run] [--identifiers FILE]
 
 AGENT is any Harbor agent: claude-code, codex, gemini-cli, kimi-cli, opencode, mini-swe-agent, openhands, aider, goose...
 Your own provider key is read from your environment (for example OPENROUTER_API_KEY) and never uploaded.
@@ -80,8 +80,9 @@ export function describeJob(job) {
     tasks: [...new Set(trials.map(t => t.split('__')[0]))].sort() };
 }
 
-// A scrubbed copy of the job: the home directory becomes "~". Then every file is checked for keys.
-export function stageJob(job, staging, { home = os.homedir(), secrets = [] } = {}) {
+// A scrubbed copy of the job. It removes creator IDs, listed personal identifiers, and the home directory. The
+// original stays untouched. The staged copy must also pass the key, residual-data, and symbolic-link checks.
+export function stageJob(job, staging, { home = os.homedir(), secrets = [], identifiers = [] } = {}) {
   fs.rmSync(staging, { recursive: true, force: true });
   fs.cpSync(job, staging, { recursive: true, verbatimSymlinks: true });
   const walk = directory => { for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -90,8 +91,8 @@ export function stageJob(job, staging, { home = os.homedir(), secrets = [] } = {
     else if (entry.isFile()) {
       const bytes = fs.readFileSync(file);
       if (bytes.includes(0)) continue;
-      const text = bytes.toString('utf8');
-      if (home && text.includes(home)) fs.writeFileSync(file, text.split(home).join('~'));
+      const text = bytes.toString('utf8'), clean = scrubPersonalData(text, { identifiers, home });
+      if (clean !== text) fs.writeFileSync(file, clean);
     }
   } };
   walk(staging);
@@ -99,7 +100,8 @@ export function stageJob(job, staging, { home = os.homedir(), secrets = [] } = {
   // expects that name as the archive's folder: the copy names itself after its folder.
   const config = path.join(staging, 'config.json');
   if (fs.existsSync(config)) { const value = JSON.parse(fs.readFileSync(config, 'utf8')); if (!value.job_name) fs.writeFileSync(config, JSON.stringify({ ...value, job_name: path.basename(staging) }, null, 2)); }
-  return findSecrets(staging, { home, secrets });
+  const stagingName = path.basename(staging);
+  return [...findSecrets(staging, { secrets, stagingName }), ...findPersonalData(staging, { identifiers, home, stagingName })];
 }
 
 export async function main(argv = process.argv.slice(2), { harbor = 'harbor', log = console.log, env = process.env } = {}) {
@@ -126,18 +128,23 @@ export async function main(argv = process.argv.slice(2), { harbor = 'harbor', lo
     return result.status ?? 1;
   }
   if (command === 'submit') {
-    const dryRun = own.includes('--dry-run'), job = own.filter(a => a !== '--dry-run')[0] && path.resolve(own.filter(a => a !== '--dry-run')[0]);
+    const { values, positionals } = parseArgs({ args: own, allowPositionals: true, strict: true,
+      options: { 'dry-run': { type: 'boolean' }, identifiers: { type: 'string' } } });
+    const dryRun = values['dry-run'] ?? false, job = positionals.length === 1 && path.resolve(positionals[0]);
     if (!job || !fs.existsSync(path.join(job, 'config.json'))) { log('Name a Harbor job directory: topo-workbench submit workbench-jobs/2026-10-23__12-00-00'); return 1; }
-    const described = describeJob(job);
+    let identifiers;
+    try { identifiers = readIdentifiers(values.identifiers); }
+    catch (error) { log(`Not uploaded: ${error.message}`); return 1; }
     const secrets = Object.values(PROVIDERS).map(p => env[p.key]).filter(Boolean);
     // The copy keeps the job's own folder name: Harbor names the uploaded job by it, and a download expects it.
     const staging = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'topo-workbench-')), path.basename(job));
-    const findings = stageJob(job, staging, { secrets });
+    const findings = stageJob(job, staging, { secrets, identifiers });
     if (findings.length) {
       log('Not uploaded: the job holds what must stay on this machine.');
       for (const f of findings) log(`- ${f.file}: ${f.kind}`);
       return 1;
     }
+    const described = describeJob(staging);
     if (dryRun) { log(`Checked ${described.trials} trials (${described.agent}, ${described.model}): nothing that must stay on this machine. Staged at ${staging}.\nWithout --dry-run: harbor upload ${staging} --private --share-org ${ORG} -y, then a prefilled GitHub issue.`); return 0; }
     log(`Uploading ${described.trials} trials (${described.agent}, ${described.model}) to Harbor Hub, shared with ${ORG}...`);
     const upload = spawnSync(harbor, ['upload', staging, '--private', '--share-org', ORG, '-y'], { encoding: 'utf8', env });

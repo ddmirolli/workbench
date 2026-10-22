@@ -1,0 +1,43 @@
+{
+  "version": "topo-request/1",
+  "task": {
+    "version": "topo-task/1",
+    "domain": "software",
+    "goal": "Synthetic demonstration of one bounded parser repair",
+    "acceptanceChecks": [ "The synthetic regression check passes" ],
+    "responsibility": "bounded-change",
+    "rationale": "Synthetic demonstration input. The task has defined behavior and one observable check.",
+    "workload": { "rung": 1, "unit": "tickets" }
+  },
+  "policy": {
+    "version": "topo-policy/1",
+    "objective": "maximize-speed",
+    "allowedProviderInstanceIds": [ "synthetic-example-account" ],
+    "bindings": [
+      {
+        "configurationId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "providerInstanceId": "synthetic-example-account",
+        "model": "synthetic-fast-model",
+        "options": { "effort": "medium" }
+      }
+    ],
+    "comparisonKey": "mtb-comparison/3:synthetic",
+    "taskSetVersion": "mtb-task-set/synthetic",
+    "datasetSha256": "a3a01029e8b1ea28e0b8cb0ec511f1752cd4d13011d03000667d28d2a38f1d3a",
+    "minSuccessLower95": 0.8,
+    "minAttempts": 10,
+    "now": "2026-10-18",
+    "maxDatasetAgeDays": 14,
+    "maxPriceAgeDays": 30
+  },
+  "catalog": {
+    "providers": [
+      {
+        "providerInstanceId": "synthetic-example-account",
+        "canRunChildTask": true,
+        "constraints": [],
+        "models": [ { "id": "synthetic-fast-model", "options": [ { "id": "effort", "type": "select", "options": [ { "id": "medium" } ] } ] } ]
+      }
+    ]
+  }
+}

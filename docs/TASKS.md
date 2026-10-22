@@ -5,9 +5,10 @@ finished. These are the briefs as written; what the checks look for stays privat
 
 ## Entry Level: fix a ticket
 
-An invoicing web app, a Python service and a Go service, with one `TASK.md` holding the session rules and the ticket.
-For example: when a customer is deleted, they must leave the active list while their invoices and line items stay
-intact. The fix must keep the visible tests passing and stay inside the app.
+An invoicing web app, a Python service and a Go service, with one `TASK.md` holding the session rules, the shared
+interface contract and the ticket. The Entry Level contract specifies the required interface and behavior. The ticket
+identifies the repair. For example: when a customer is deleted, they must leave the active list while their invoices
+and line items stay intact. The fix must keep the visible tests passing and stay inside the app.
 
 ## Middle Management: "Pull everything, work out what is going on"
 

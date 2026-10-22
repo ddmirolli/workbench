@@ -1,0 +1,77 @@
+{
+  "version": "topo-export/1",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "e1446f469e9e2491dcc8ef80675c98b832dd891a5246432093075e368bf3dc4b"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "a670d474c28563e7536a80c36bb678e21b2eeeb72c12d29af343f011940e784f"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "ce91d8c52867496610607333279100e9b8fb53109b5cdb5cb94ea7632036dd34"
+    },
+    {
+      "path": "evidence-manifest.json",
+      "sha256": "c3f392ba3d35f5c7125032af8c8cd8896c58bc9b1017defc1c4d2f4b23726242"
+    },
+    {
+      "path": "examples/refresh-request.example.json",
+      "sha256": "86c341c6a992c1b946bb55a8f06d96b22e2564e4d3d3df937f6016ea3fc5de24"
+    },
+    {
+      "path": "examples/synthetic-publication.json",
+      "sha256": "8391de6488d19efc2a90be6e552c78f6ed05c118994191dba23e03bea8831316"
+    },
+    {
+      "path": "examples/synthetic-request.json",
+      "sha256": "883cbba4c154a2d6f332aa4606d450f864f2a7c9195a8ef7c03d4f4006681c1d"
+    },
+    {
+      "path": "examples/workload-examples.json",
+      "sha256": "67f9683aa58aa3f74132bdf5b0511538846116e1340aa7e9ba7c32693cc8d87b"
+    },
+    {
+      "path": "references/request.md",
+      "sha256": "1672bbb4e69fc00f58582c492541156cfaf64f45fc73fcff64f6c6e9a45dc0c9"
+    },
+    {
+      "path": "references/setup.md",
+      "sha256": "d0bb2d7708e9fa7cb420b43bd8a1932f3c175f9719304a4c61e96cac32022081"
+    },
+    {
+      "path": "references/t3-integration.md",
+      "sha256": "b78b0febd7243ee227283eb65ddc6d288b086257efc00937fbce73764d665920"
+    },
+    {
+      "path": "references/task-rubric.md",
+      "sha256": "77686eddc9aa6c7380373a63988d307f97250252ddf45134cccde98c9fe28b2f"
+    },
+    {
+      "path": "scripts/export.mjs",
+      "sha256": "91bd629d0f12af128e5841d03ffff84bd5a87c0a75e782d076986c4a64b22014"
+    },
+    {
+      "path": "scripts/publication-schema.mjs",
+      "sha256": "2475b8dddf096443dc826ff0e46c5dc2dd84d741260896df8a155e9bc093ad43"
+    },
+    {
+      "path": "scripts/refresh.mjs",
+      "sha256": "c8f773ffc0e1f55407b1bc0f2a23b49be9c556af4d22adb073a74e59a0cda6d2"
+    },
+    {
+      "path": "scripts/selector.mjs",
+      "sha256": "248a8e364d58294e49b69a9e9c9e2e4795608c4fb5fa23dad99845c0386e346a"
+    },
+    {
+      "path": "scripts/topo.mjs",
+      "sha256": "3c1496c91e45249e01674590c50cd8988ccf71a3ecec424fb92219b3333276c7"
+    },
+    {
+      "path": "scripts/topography.mjs",
+      "sha256": "1e0b733437abb86d4de4b8f50543ddc0b082e85024b6351aab32c37900bb94f5"
+    }
+  ]
+}

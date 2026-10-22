@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "notice": "These are structured-input examples. They do not empirically qualify the rubric or approve a sample threshold, account, or policy value.",
+  "examples": [
+    {
+      "name": "accepted-example",
+      "task": {
+        "version": "topo-task/1",
+        "domain": "software",
+        "goal": "Repair one defined parser behavior",
+        "acceptanceChecks": [ "The named regression test passes" ],
+        "responsibility": "bounded-change",
+        "rationale": "The brief states the behavior and an independent check.",
+        "workload": { "rung": 1, "unit": "tickets" }
+      }
+    },
+    {
+      "name": "mixed-example",
+      "task": {
+        "version": "topo-task/1",
+        "domain": "software",
+        "goal": "Reconcile records and redesign the surrounding service",
+        "acceptanceChecks": [ "The reconciliation receipt exists", "The implementation checks pass" ],
+        "responsibility": "mixed",
+        "rationale": "The example combines separate responsibilities.",
+        "workload": null
+      }
+    },
+    {
+      "name": "unknown-example",
+      "task": {
+        "version": "topo-task/1",
+        "domain": "software",
+        "goal": "Investigate an incomplete report",
+        "acceptanceChecks": [],
+        "responsibility": "unknown",
+        "rationale": "The brief does not support a measured responsibility or workload mapping.",
+        "workload": null
+      }
+    },
+    {
+      "name": "unsupported-example",
+      "task": {
+        "version": "topo-task/1",
+        "domain": "other",
+        "goal": "Draft public campaign copy",
+        "acceptanceChecks": [ "The requested copy is supplied" ],
+        "responsibility": "unknown",
+        "rationale": "This example is outside the measured software-task domain.",
+        "workload": null
+      }
+    }
+  ]
+}

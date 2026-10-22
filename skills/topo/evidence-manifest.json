@@ -1,0 +1,283 @@
+{
+  "version": "topo-evidence-manifest/1",
+  "sourcePublication": {
+    "canonicalSha256": "8b45f2caad382a2d007e4b6f740dc8866ba4f8cf1b71802d83b748dbdacead09",
+    "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+    "sourceHash": "49e50f65baa3d5391996152dc6d48d2ca2cd6da11d5878eed567a705a8f511d2",
+    "auditHash": "253c1315c34250f31b1e6429ac2f4d8d41c59dd41df0871c960aeaa5a9f888f6"
+  },
+  "publicRepository": "https://github.com/ddmirolli/workbench",
+  "references": [
+    {
+      "kind": "method-doc",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/docs/METHOD.md"
+    },
+    {
+      "kind": "task-doc",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/docs/TASKS.md"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "022e277f4633b34ae6aca8dde6c6b3802167fc685f0afd7c3ca5f6dc61db733e",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/022e277f4633.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "241efef4e03f084737611aab5a22337e567abd15e03e66d1aa94d4bd179bb380",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/241efef4e03f.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "24ba192bb07217abc2203c1caf610c58a5b470079a31bf2602e0e723cee51a51",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/24ba192bb072.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "25f7989e677508236dc01875c851176c7186b27320086f83d07c7c193ce2bde7",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/25f7989e6775.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "288359fac292374c97d7f7766b7100cc583a3155f0f3fe66bc7833f94330b48e",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/288359fac292.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "29c81decca256a9a9e76bc4351b3a6a341b6b77480f0a96a760493c34b0eafe6",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/29c81decca25.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "338f541c0dd6fba04f1dc28b90f8b82d06972b09c6b7186d46901f095c2dc776",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/338f541c0dd6.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "3dc8291adbb705544a3f9e55b89c2bdb20960307faf93987a9fb30fbeb1b03af",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/3dc8291adbb7.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "43dd3ba05b71fc2248708ab3304c943c81c640c0b85516c4afe3184f742806cb",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/43dd3ba05b71.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "458716780cfec3f9d0a443a2f0a8dbc7a0bbd93edce56d67d1f26e7147e938ba",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/458716780cfe.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "4b68dd37cd9c9981b055df8439458db7f726cf0e887a8e2fbd7b3e26e110869d",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/4b68dd37cd9c.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "53474967160ee7bf3ab4de4a4b90ba227ae6a8473a10946ff992fe0b3e612670",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/53474967160e.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "58b6b0fe95bb7087755e57c5324d5587c9d5af759d0d24916d967e4e18fa7b31",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/58b6b0fe95bb.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "63b4c09905ffb9817612f312fb3e168a31a5460ddf1d96f3ec431961ac12d451",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/63b4c09905ff.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "64221fbb9940f6e8ffe5c876a3e604c85914ddefb27f8a7d0d76adc0da27d9ae",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/64221fbb9940.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "6ae32d7745b2621d8056ff192bd556be8f619890bb616e2cdf5d87d09d79beb1",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/6ae32d7745b2.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "705fc67f7aec02338345599e97e5d6fdb81c94a8af4cce9757fea62ad07f94ff",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/705fc67f7aec.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "734d46a3bd968d59c547c9d25435f1f6a8a351032054100824f45af6391a9cb3",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/734d46a3bd96.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "79f7a6cf50c47253eacd1b77b0cc3b95750380a751eae7581d7105b5726eb557",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/79f7a6cf50c4.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "7d1d96b20d937b509e394ecff51d0cbf979e78a39f6d5ae02469be47097968a0",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/7d1d96b20d93.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "7f20b3975463e204951c9831c62fd629ac016ed872a3aed1fc029e1c488ed5a2",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/7f20b3975463.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "81eb813aa70841573c0225e435a9a05c35f46eb88685083747f153dbd8f4e1d0",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/81eb813aa708.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "84ab4aae533d17dc60e455ce8bcc0c6f759ade02e4ef86f5bc9c47baf35ae482",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/84ab4aae533d.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "9469df3cff1c590be4618c95208d4c8c88bb285a33a2f45a7a1cc305803a4d34",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/9469df3cff1c.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "9488ca833ae5ea3e28ef78949673aecb5428f3e5f253292ed6c1d65c17f4bc54",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/9488ca833ae5.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "956397fad68dbea812b64b9ae556612a30d28668a3f27661e35e7fd3d058962e",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/956397fad68d.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "9fe7611fd272b7d2a344e20eb0214bd5b9eadccee5f60515de309fc0e14c7542",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/9fe7611fd272.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "a92992e301420c4414ec062faf88484d753be57f1a914f550c92d75e6e14e450",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/a92992e30142.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "aa1ee295e7d9b93fb85bfc3794e984e93eec8aa8e2179c4e35d561a59bad21c6",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/aa1ee295e7d9.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "aceaaf786c077b4028d02d133b5b936a536fd5ca5c8f164fa9e1568dd2c7f1fa",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/aceaaf786c07.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "ad1c49231c00bfd810876703ea768ab20b889b5cf37954bd7f7b102394f032d0",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/ad1c49231c00.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "b2f7980ed1ea56d7cdcf20979d29fdb576e506a97d1d85ba8693365db443eb96",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/b2f7980ed1ea.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "c24ccbcc2ab73f349de1429bcad2e003791af2ef0d4d2b9483fae45591dbd58f",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/c24ccbcc2ab7.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "cd364000b3cf97d7e1eadf1f83061555ea8646f5d0fcd128955f6358f67200a5",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/cd364000b3cf.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "d6a125155edfccf5f5cf952fb961d9c26880f03ce5f29486c602ea1f3f5b7a7c",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/d6a125155edf.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "ded6669a8c85f8ada73bfe462d3ef439513696dc97e1fd242a65dba3110f14ce",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/ded6669a8c85.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "dffc4c0f5f3a5a2ce7d07c20cc9615ffd64b80e7bdd62a7d9ad468900d3dee46",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/dffc4c0f5f3a.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "e51d6bc1e8032142ff499736eac4a165689a09d64812da3c45d233a208e564b8",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/e51d6bc1e803.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "e9071bdc9f65b57f7e5172dad9c875cb7ef97fc183685cfcf7c35fd815f0a61c",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/e9071bdc9f65.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "ed90342a04d20f8b89b435d8a931d8b094743776124e6ba7d21f91a9e7f473f2",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/ed90342a04d2.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "f17d67221d963a6887ee67755666c7f09a6e3f0e1f913df3cf7d52564f250899",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/f17d67221d96.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "f1e793b89a7f0909c25630aabd4476a9f196bd88e1abf2340da0f8a2f481fbeb",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/f1e793b89a7f.json"
+    },
+    {
+      "kind": "campaign",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "campaign": "f998f23be36c8fb12ee2fd82b94945e003abd58e866239df2f4107fca7a9c6ab",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/f998f23be36c.json"
+    },
+    {
+      "kind": "results-index",
+      "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+      "publicUrl": "https://github.com/ddmirolli/workbench/blob/main/evidence/a6ce89e9f071/README.md"
+    }
+  ]
+}
