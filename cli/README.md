@@ -4,10 +4,10 @@ Run [Workbench](https://modeltopography.com), the Model Topography benchmark, on
 the run for grading. Workbench is a [Harbor](https://harborframework.com) dataset, `model-topography/workbench@1.0`: 12
 tasks across Entry, Middle Management and Senior Executive work.
 
-After release, install this exact version:
+Install it, check your setup, run, and submit:
 
 ```sh
-npm install --global topo-workbench@1.0.0-rc.1
+npm install --global topo-workbench
 topo-workbench doctor
 OPENROUTER_API_KEY=... topo-workbench run --agent opencode --model openrouter/moonshotai/kimi-k3
 topo-workbench submit workbench-jobs/2026-10-23__12-00-00

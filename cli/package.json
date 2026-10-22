@@ -1,6 +1,6 @@
 {
   "name": "topo-workbench",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Workbench: run the Model Topography benchmark on any model with Harbor, then submit the run for grading.",
   "homepage": "https://modeltopography.com",
   "license": "MIT",
