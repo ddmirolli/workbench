@@ -123,7 +123,7 @@ export async function main(argv = process.argv.slice(2), { harbor = 'harbor', lo
     const result = spawnSync(harbor, args, { stdio: 'inherit', env });
     if (result.status === 0) {
       const job = fs.existsSync(out) ? fs.readdirSync(out).filter(n => fs.existsSync(path.join(out, n, 'config.json'))).sort().at(-1) : null;
-      log(`\nDone. A point on the map needs ${FULL_SAMPLE} attempts at every task. Submit it for grading: topo-workbench submit ${job ? path.join(out, job) : out + '/<job>'}`);
+      log(`\nDone. The default community sample is ${FULL_SAMPLE} attempts at each task. A published point needs at least five scored attempts at every size; compatible partial and top-up campaigns can pool. Submit it for grading: topo-workbench submit ${job ? path.join(out, job) : out + '/<job>'}`);
     }
     return result.status ?? 1;
   }
