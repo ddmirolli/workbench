@@ -7,4 +7,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node --test cli/test/*.test.js
+      - name: Run public CLI tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          tests=(cli/test/*.test.js)
+          ((${#tests[@]} > 0)) || { echo "No public CLI tests found" >&2; exit 1; }
+          node --test "${tests[@]}"

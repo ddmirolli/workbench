@@ -1,0 +1,111 @@
+{
+  "version": "mtb-public-evidence/1",
+  "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+  "campaign": "0295735341dde74b8f847cb4d000846833bd154b70a2ff1460f634365e3c5a6e",
+  "revision": "63a29c35d784d07ae201abe3612a4692703003bf",
+  "gradingIdentity": "0253eb69cf67f38dc866d73adfcc6ac157d85fbc",
+  "model": {
+    "scheme": "models.dev",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5"
+  },
+  "client": "Claude Code",
+  "clientVersion": "2.1.285",
+  "dataset": "mtb-harbor/2",
+  "protocol": "mtb-full-sample/1",
+  "withdrawnTiers": [],
+  "attempts": [
+    {
+      "attempt": "000001",
+      "tier": "entry",
+      "size": 1,
+      "reasoning": "max",
+      "outcome": "pass",
+      "termination": "submitted",
+      "reason": null,
+      "share": 1,
+      "credit": 1,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": 679.959,
+      "tokens": {
+        "input_tokens": 2331473,
+        "cached_input_tokens": 2210877,
+        "cache_write_input_tokens": 120542,
+        "output_tokens": 85180
+      },
+      "trialSha256": "8f6c84a1241590c128016c3f7327c56688abcc31da5b6de46029f48ef29ed7a7",
+      "regraded": null
+    },
+    {
+      "attempt": "000002",
+      "tier": "entry",
+      "size": 2,
+      "reasoning": "max",
+      "outcome": "pass",
+      "termination": "submitted",
+      "reason": null,
+      "share": 1,
+      "credit": 1,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": 2114.288,
+      "tokens": {
+        "input_tokens": 12916901,
+        "cached_input_tokens": 12531382,
+        "cache_write_input_tokens": 385323,
+        "output_tokens": 262024
+      },
+      "trialSha256": "803af78fc0fcbe9735174e5763815ffe84b574e89c9aaa6ae2a7b3119fd12274",
+      "regraded": null
+    },
+    {
+      "attempt": "000003",
+      "tier": "entry",
+      "size": 4,
+      "reasoning": "max",
+      "outcome": "pass",
+      "termination": "submitted",
+      "reason": null,
+      "share": 1,
+      "credit": 1,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": 3440.622,
+      "tokens": {
+        "input_tokens": 24092978,
+        "cached_input_tokens": 23437352,
+        "cache_write_input_tokens": 655284,
+        "output_tokens": 480863
+      },
+      "trialSha256": "ce7b88ddf6697aa42b5fde37b996d974521b7234757071ad4351e270052b380c",
+      "regraded": null
+    },
+    {
+      "attempt": "000004",
+      "tier": "entry",
+      "size": 8,
+      "reasoning": "max",
+      "outcome": "pass",
+      "termination": "submitted",
+      "reason": null,
+      "share": 1,
+      "credit": 1,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": 6534.842,
+      "tokens": {
+        "input_tokens": 53452583,
+        "cached_input_tokens": 52256122,
+        "cache_write_input_tokens": 1195849,
+        "output_tokens": 807377
+      },
+      "trialSha256": "daacbd9d0e8a5209ef17362be839226b59c29f596cfae422e78a0f8b8e887ebb",
+      "regraded": "0253eb69cf67f38dc866d73adfcc6ac157d85fbc"
+    }
+  ]
+}

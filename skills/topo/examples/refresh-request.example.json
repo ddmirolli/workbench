@@ -1,0 +1,42 @@
+{
+  "version": "topo-refresh-request/1",
+  "task": {
+    "version": "topo-task/1",
+    "domain": "software",
+    "goal": "Illustrative bounded software change",
+    "acceptanceChecks": [ "Replace this with an observable acceptance check" ],
+    "responsibility": "bounded-change",
+    "rationale": "Illustrative request only. Classify the actual child task from its brief.",
+    "workload": { "rung": 1, "unit": "tickets" }
+  },
+  "policy": {
+    "version": "topo-refresh-policy/1",
+    "source": "https://modeltopography.com/published.json",
+    "objective": "maximize-speed",
+    "allowedProviderInstanceIds": [ "REPLACE_WITH_AUTHORIZED_ACCOUNT_ID" ],
+    "bindings": [
+      {
+        "configurationId": "REPLACE_WITH_MEASURED_CONFIGURATION_ID",
+        "providerInstanceId": "REPLACE_WITH_AUTHORIZED_ACCOUNT_ID",
+        "model": "REPLACE_WITH_EXACT_CATALOG_MODEL_ID",
+        "options": { "effort": "REPLACE_WITH_MEASURED_EFFORT" }
+      }
+    ],
+    "comparisonKey": "REPLACE_WITH_MEASURED_COMPARISON_KEY",
+    "taskSetVersion": "REPLACE_WITH_MEASURED_TASK_SET_VERSION",
+    "minSuccessLower95": 0.8,
+    "minAttempts": 10,
+    "maxDatasetAgeDays": 14,
+    "maxPriceAgeDays": 30
+  },
+  "catalog": {
+    "providers": [
+      {
+        "providerInstanceId": "REPLACE_WITH_AUTHORIZED_ACCOUNT_ID",
+        "canRunChildTask": true,
+        "constraints": [],
+        "models": [ { "id": "REPLACE_WITH_EXACT_CATALOG_MODEL_ID", "options": [ { "id": "effort", "type": "select", "options": [ { "id": "REPLACE_WITH_MEASURED_EFFORT" } ] } ] } ]
+      }
+    ]
+  }
+}

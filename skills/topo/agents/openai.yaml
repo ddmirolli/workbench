@@ -1,0 +1,4 @@
+interface:
+  display_name: "Topo"
+  short_description: "Route software tasks using Workbench evidence"
+  default_prompt: "Use $topo to recommend a configured agent for this software subtask."

@@ -1,0 +1,55 @@
+{
+  "version": "mtb-public-evidence/1",
+  "resultsCommit": "a6ce89e9f0717cab5ce6d041a833b4f3b4adcc2d",
+  "campaign": "8041ecfd7b280a44d417403f7d300764f7b0bbdd5d818c51cdf9c625434b403e",
+  "revision": "4c6324ffb68bebe2fcfad43ed9f9dfdad59ffc02",
+  "gradingIdentity": "69f0697a6c2e4bc93b4aa60592299e618c5ce27b",
+  "model": {
+    "scheme": "models.dev",
+    "provider": "anthropic",
+    "model": "claude-haiku-5-5"
+  },
+  "client": "Claude Code",
+  "clientVersion": "2.1.285",
+  "dataset": "mtb-harbor/3",
+  "protocol": "mtb-full-sample/1",
+  "withdrawnTiers": [],
+  "attempts": [
+    {
+      "attempt": "000001",
+      "tier": "management",
+      "size": 4,
+      "reasoning": "max",
+      "outcome": "fail",
+      "termination": "crash",
+      "reason": null,
+      "share": 0,
+      "credit": null,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": null,
+      "tokens": null,
+      "trialSha256": null,
+      "regraded": null
+    },
+    {
+      "attempt": "000005",
+      "tier": "executive",
+      "size": 4,
+      "reasoning": "max",
+      "outcome": "fail",
+      "termination": "crash",
+      "reason": null,
+      "share": 0,
+      "credit": null,
+      "falseCompletion": false,
+      "failedRules": [],
+      "harmRules": [],
+      "seconds": null,
+      "tokens": null,
+      "trialSha256": null,
+      "regraded": null
+    }
+  ]
+}

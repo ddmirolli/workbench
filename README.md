@@ -48,8 +48,23 @@ point names its task revision, configuration, attempts, verdicts, time and cost 
 
 ## Submit a run
 
-[CONTRIBUTING.md](CONTRIBUTING.md) explains what a submission needs: 10 attempts at every task, the full dataset, and the
-agent and model you declare.
+[CONTRIBUTING.md](CONTRIBUTING.md) explains the recommended community full sample: 10 attempts at every task, the full
+dataset, and the agent and model you declare. A published point reports its actual attempt counts. It needs at least
+five scored attempts at every size, and can pool partial and top-up campaigns that use the same task conditions.
+
+## Topo
+
+[`skills/topo`](skills/topo) uses Workbench measurements to recommend a model configuration for one software subtask.
+It runs with Node 22 or newer and no npm packages. Start with its synthetic offline example:
+
+```sh
+node skills/topo/scripts/topo.mjs \
+  --request skills/topo/examples/synthetic-request.json \
+  --dataset skills/topo/examples/synthetic-publication.json
+```
+
+Topo recommends only. A parent agent classifies the task, sets the policy, and keeps the target unset when the evidence
+does not support a recommendation. It is not an official T3 feature and does not dispatch models.
 
 ## License
 
