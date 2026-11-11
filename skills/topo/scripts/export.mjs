@@ -1,4 +1,4 @@
-// Generated from topo/export.ts by scripts/build-topo.mjs.
+// Generated from topo/export.ts by scripts/build-topo.ts.
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';

@@ -3,15 +3,24 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        node: [22, 24]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
-      - name: Run public CLI tests
+        with: { node-version: "${{ matrix.node }}" }
+      # The CLI is strict TypeScript. The package ships the compiled dist/, and Node runs the tests' TypeScript directly.
+      - name: Build, typecheck and test the CLI
+        working-directory: cli
         shell: bash
         run: |
           set -euo pipefail
           shopt -s nullglob
-          tests=(cli/test/*.test.js)
+          tests=(test/*.test.ts)
           ((${#tests[@]} > 0)) || { echo "No public CLI tests found" >&2; exit 1; }
+          npm ci
+          npm run build
+          npm run typecheck
           node --test "${tests[@]}"
+          node dist/bin/topo-workbench.js --help > /dev/null

@@ -1,4 +1,4 @@
-// Generated from core/publication-schema.ts by scripts/build-topo.mjs.
+// Generated from core/publication-schema.ts by scripts/build-topo.ts.
 import { AXIS_NAMES, isComplete } from './topography.mjs';
 // This parser runs in a browser. Signature checks and score arithmetic run in the publisher.
 function check(value, message = 'Invalid publication data') { if (!value)

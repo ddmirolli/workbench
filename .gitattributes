@@ -1,0 +1,3 @@
+# GitHub's language bar counts the code people write and maintain here: the TypeScript in cli/. The topo skill's
+# scripts are compiled output, built from TypeScript before each release, so they are marked generated and left out.
+skills/topo/scripts/*.mjs linguist-generated

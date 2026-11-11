@@ -51,6 +51,10 @@ Efficiency mostly reflects cost.
 More reasoning earns nothing by itself. It has to pay for its own time and cost in finished work, so a model's scores
 can rise and then fall as its reasoning setting climbs.
 
+Cognition's [FrontierCode 2.0](https://cognition.com/blog/frontier-code-2.0) finds a similar curve on its own coding
+tasks: models can score lower at higher reasoning effort, partly because they touch more files than the change needs.
+Its tasks and scores are private, so they are cited here and never enter a score on the map.
+
 ## Reading the map
 
 Height is Intelligence. The floor is Agency against Efficiency. The sheet passes through every plotted point and says
