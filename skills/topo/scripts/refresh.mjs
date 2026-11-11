@@ -1,4 +1,4 @@
-// Generated from topo/refresh.ts by scripts/build-topo.mjs.
+// Generated from topo/refresh.ts by scripts/build-topo.ts.
 import { parsePublicationDataset } from './publication-schema.mjs';
 import { invalidTopoRequest, parseTopoRequest, publicationFingerprint, recommendTopo } from './selector.mjs';
 export const TRUSTED_PUBLICATION_URL = 'https://modeltopography.com/published.json';

@@ -1,4 +1,4 @@
-// Generated from core/topography.ts by scripts/build-topo.mjs.
+// Generated from core/topography.ts by scripts/build-topo.ts.
 // Axes have names, not letters. A chart decides which name it draws on which
 // letter. A routing client reads the names and never sees a letter.
 export const AXIS_NAMES = ['workload', 'efficiency', 'intelligence'];

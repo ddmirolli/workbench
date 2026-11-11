@@ -15,7 +15,7 @@
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "c3f392ba3d35f5c7125032af8c8cd8896c58bc9b1017defc1c4d2f4b23726242"
+      "sha256": "fef1a1055d4daca0b9e9b428b647ba752bff5d84281393f34cb1cf5cc2ba2809"
     },
     {
       "path": "examples/refresh-request.example.json",
@@ -51,27 +51,27 @@
     },
     {
       "path": "scripts/export.mjs",
-      "sha256": "91bd629d0f12af128e5841d03ffff84bd5a87c0a75e782d076986c4a64b22014"
+      "sha256": "1bb49e143fb16a29d5fda6833283fbabbcae4fdf3579974f1181a9a7865ae3d1"
     },
     {
       "path": "scripts/publication-schema.mjs",
-      "sha256": "2475b8dddf096443dc826ff0e46c5dc2dd84d741260896df8a155e9bc093ad43"
+      "sha256": "f7e3edcd85148c235203d4433160079a4b7125215a0ad1e6af83ab342561f722"
     },
     {
       "path": "scripts/refresh.mjs",
-      "sha256": "c8f773ffc0e1f55407b1bc0f2a23b49be9c556af4d22adb073a74e59a0cda6d2"
+      "sha256": "fed69c56d8c195a6da9e5e46f121877521656eb6c041a303a3826ef5a07f0941"
     },
     {
       "path": "scripts/selector.mjs",
-      "sha256": "248a8e364d58294e49b69a9e9c9e2e4795608c4fb5fa23dad99845c0386e346a"
+      "sha256": "dc6046643221070aaa2ec6a13d895f8c2caffb5e314d393a7a35f4387ed22ff9"
     },
     {
       "path": "scripts/topo.mjs",
-      "sha256": "3c1496c91e45249e01674590c50cd8988ccf71a3ecec424fb92219b3333276c7"
+      "sha256": "dc286508ea34e5e38677a66b52ecd49abe45bc91c20de5295b4c3dcc1ca79559"
     },
     {
       "path": "scripts/topography.mjs",
-      "sha256": "1e0b733437abb86d4de4b8f50543ddc0b082e85024b6351aab32c37900bb94f5"
+      "sha256": "dc1b7a97f63a082a9fd5ad61818975c43c963e73aaa4153b0f7d780f66e6a7ea"
     }
   ]
 }

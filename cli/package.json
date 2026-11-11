@@ -1,13 +1,22 @@
 {
   "name": "topo-workbench",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Workbench: run the Model Topography benchmark on any model with Harbor, then submit the run for grading.",
   "homepage": "https://modeltopography.com",
   "license": "MIT",
   "author": "Dan Mirolli",
   "type": "module",
-  "bin": { "topo-workbench": "bin/topo-workbench.js" },
-  "files": ["bin", "lib"],
+  "bin": { "topo-workbench": "dist/bin/topo-workbench.js" },
+  "files": ["dist"],
   "engines": { "node": ">=22" },
-  "scripts": { "test": "node --test test/*.test.js" }
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "node --test test/*.test.ts",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "typescript": "7.0.2"
+  }
 }

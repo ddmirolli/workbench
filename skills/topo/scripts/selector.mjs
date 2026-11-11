@@ -1,4 +1,4 @@
-// Generated from topo/selector.ts by scripts/build-topo.mjs.
+// Generated from topo/selector.ts by scripts/build-topo.ts.
 import { createHash } from 'node:crypto';
 import { parsePublicationDataset } from './publication-schema.mjs';
 export const TOPO_VERSION = 'topo-routing/1';

@@ -1,4 +1,4 @@
-// Generated from topo/cli.ts by scripts/build-topo.mjs.
+// Generated from topo/cli.ts by scripts/build-topo.ts.
 import fs from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { publicationFingerprint, recommendTopo, validateTopoRequest } from './selector.mjs';
